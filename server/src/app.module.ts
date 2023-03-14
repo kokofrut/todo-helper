@@ -19,12 +19,12 @@ import { User } from './user/user.model';
 
 @Module({
   imports: [
-    // ConfigModule.forRoot({
-    //   envFilePath: '.env',
-    // }),
+    ConfigModule.forRoot({
+      envFilePath: '.env',
+    }),
     SequelizeModule.forRoot({
       dialect: 'postgres',
-      host: 'dumbo',
+      host: 'dumbo.db.elephantsql.com',
       username: process.env.DB_USER,
       password: process.env.DB_PASSWORD,
       database: process.env.DB_NAME,
