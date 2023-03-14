@@ -19,9 +19,9 @@ import { User } from './user/user.model';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({
-      envFilePath: '.env',
-    }),
+    // ConfigModule.forRoot({
+    //   envFilePath: '.env',
+    // }),
     SequelizeModule.forRoot({
       dialect: 'postgres',
       host: 'dumbo',
