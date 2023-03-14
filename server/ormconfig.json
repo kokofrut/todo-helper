@@ -1,6 +1,6 @@
 {
     "type": "postgres",
-    "url": "${DATABASE_URL}",
+    "url": "postgres://tkqbwhet:jMrpyAXepAGTONblyNrDR7mcYyGls-_h@dumbo.db.elephantsql.com/tkqbwhet",
     "entities": ["dist/**/*.entity{.ts,.js}"],
     "synchronize": true
   }
