@@ -42,7 +42,7 @@ export class UserController {
   }
 
   @Get(':id')
-  @UseGuards(AuthGuard('jwt'))
+  // @UseGuards(AuthGuard('jwt'))
   @ApiResponse({ status: 200, description: 'Successfully retrieved user.' })
   @ApiResponse({ status: 404, description: 'User not found.' })
   async findOne(@Param('id') id: string): Promise<User> {
