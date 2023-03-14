@@ -1,0 +1,13 @@
+.todo-container {
+    background-color: beige;
+}
+
+.todos-wrapper {
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 80vw;
+    width: 100%;
+}
