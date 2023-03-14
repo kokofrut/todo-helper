@@ -5,7 +5,8 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableCors({
-    origin: '*',
+    origin: 'https://kokofrut-todo.netlify.app',
+    credentials: true
   });
   const config = new DocumentBuilder()
     .setTitle('My API')
